@@ -11,30 +11,6 @@ interface MenuOverlayProps {
 const menuItems = [
   {
     number: '.1',
-    label: 'Press Release',
-    href: 'press-release.html',
-    hoverClass: 'hover:text-[#00A99D]',
-    numberHoverClass: 'group-hover:text-[#00A99D]/50',
-    labelHoverClass: '',
-  },
-  {
-    number: '.2',
-    label: 'Core Offerings',
-    href: 'core-offerings.html',
-    hoverClass: 'hover:text-[#5e0ecd]',
-    numberHoverClass: 'group-hover:text-[#5e0ecd]/50',
-    labelHoverClass: '',
-  },
-  {
-    number: '.3',
-    label: 'Our Projects',
-    href: 'our-projects.html',
-    hoverClass: 'hover:text-[#00A99D]',
-    numberHoverClass: 'group-hover:text-white/50',
-    labelHoverClass: 'group-hover:opacity-80',
-  },
-  {
-    number: '.4',
     label: 'X Social',
     href: 'https://x.com/advisory_deca4',
     hoverClass: 'hover:text-[#5e0ecd]',
@@ -116,6 +92,8 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               key={item.number}
               href={item.href}
               onClick={handleClose}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`group text-[42px] md:text-[62px] lg:text-[78px] transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] menu-item flex items-center gap-6 hover:translate-x-4 font-light text-white tracking-tighter font-space-mono w-full ${item.hoverClass} ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}

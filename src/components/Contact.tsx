@@ -23,6 +23,8 @@ export function Contact() {
         <div className="flex flex-col gap-8 mt-10 items-center">
           <a
             href="https://calendly.com/sam-deca4/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center justify-center gap-4 hover:bg-white/90 transition-colors uppercase text-sm text-black tracking-widest font-mono bg-white pt-5 pr-12 pb-5 pl-12"
           >
             <span>Book a call</span>

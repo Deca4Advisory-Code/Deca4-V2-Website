@@ -141,12 +141,9 @@ export function ClientsPartners() {
                     className="relative z-10 max-h-16 max-w-full object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   />
                   <div className="h-12 flex flex-col items-center justify-start overflow-hidden w-full text-center relative z-10 mt-4">
-                    <h3 className="text-white/60 group-hover:text-white font-semibold tracking-tight text-sm sm:text-base transition-colors duration-300 mb-1">
+                    <h3 className="text-white/60 group-hover:text-white font-semibold tracking-tight text-sm sm:text-base transition-colors duration-300">
                       {partner.role}
                     </h3>
-                    <p className="text-[#5e0ecd] font-mono text-[10px] sm:text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-75">
-                      {partner.siteUrl}
-                    </p>
                   </div>
                 </div>
               ))}

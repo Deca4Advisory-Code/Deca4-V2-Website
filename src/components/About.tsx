@@ -53,16 +53,7 @@ export function About() {
             </span>
             which suits your needs.
           </p>
-          <button className="group flex gap-4 hover:text-[#00A99D] transition-colors uppercase text-sm text-white tracking-widest font-mono items-center">
-            <span>Read More</span>
-            <Icon
-              icon="solar:arrow-right-up-linear"
-              width={20}
-              height={20}
-              strokeWidth={1.5}
-              className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
-            />
-          </button>
+          
         </div>
       </div>
     </section>

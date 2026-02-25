@@ -11,7 +11,7 @@ import { CoreOfferings } from '@/components/CoreOfferings';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { CornerDecorations } from '@/components/CornerDecorations';
-import { UnicornBackground, initUnicornStudio } from '@/components/UnicornBackground';
+import { UnicornBackground } from '@/components/UnicornBackground';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,36 +24,10 @@ export default function Home() {
     setIsMenuOpen(false);
   };
 
-  useEffect(() => {
-    // Initialize Unicorn Studio when component mounts
-    initUnicornStudio();
-  }, []);
-
   return (
     <>
       {/* Unicorn Studio Background */}
       <UnicornBackground />
-
-      {/* Unicorn Studio Script Loader */}
-      <Script
-        id="unicorn-studio-loader"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            !function(){
-              if(!window.UnicornStudio){
-                window.UnicornStudio={isInitialized:!1};
-                var i=document.createElement("script");
-                i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js";
-                i.onload=function(){
-                  window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)
-                };
-                (document.head || document.body).appendChild(i)
-              }
-            }();
-          `,
-        }}
-      />
 
       {/* Corner Decorations */}
       <CornerDecorations />

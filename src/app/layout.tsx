@@ -49,6 +49,10 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceMono.variable} antialiased overflow-x-hidden min-h-screen text-gray-300 bg-[#050505] w-full relative`}
       >
         <Script
+          src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js"
+          strategy="beforeInteractive"
+        />
+        <Script
           src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
           strategy="afterInteractive"
         />

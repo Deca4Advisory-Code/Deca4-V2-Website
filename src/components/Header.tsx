@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback } from 'react';
+import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { useScroll } from '@/hooks/useScroll';
 
@@ -11,10 +11,6 @@ interface HeaderProps {
 export function Header({ onMenuToggle }: HeaderProps) {
   const scrollY = useScroll();
 
-  const handleScrollToTop = useCallback(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
-
   return (
     <header
       className={`fixed flex transition-all duration-500 w-full z-50 pointer-events-auto px-6 md:px-12 top-0 right-0 left-0 items-center justify-between border-b ${
@@ -24,10 +20,7 @@ export function Header({ onMenuToggle }: HeaderProps) {
       }`}
       id="main-header"
     >
-      <div
-        className="flex items-center gap-4 cursor-pointer"
-        onClick={handleScrollToTop}
-      >
+      <Link href="/" className="flex items-center gap-4 cursor-pointer">
         <div className="overflow-hidden transition-all duration-300 group w-32 h-12 relative">
           <img
             src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/736b594f-61e0-4347-9dd2-43ca7ab6296a_320w.png"
@@ -35,7 +28,7 @@ export function Header({ onMenuToggle }: HeaderProps) {
             alt="Deca4 Logo"
           />
         </div>
-      </div>
+      </Link>
       <button
         className="flex items-center gap-3 hover:text-[#00A99D] transition-colors font-mono text-xs uppercase tracking-widest text-white/70 sm:mr-0 mr-4 -mt-6"
         onClick={onMenuToggle}

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd F:\\\\Deca4\\\\projects\\\\deca4\\\\website:*)",
+      "Bash(cd \"F:\\\\Deca4\\\\projects\\\\deca4\\\\website\" && npm run build 2>&1)",
+      "Bash(head:*)",
+      "Bash(git config:*)",
+      "Bash(gh auth:*)",
+      "Bash(vercel:*)",
+      "Bash(cd:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

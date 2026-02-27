@@ -16,7 +16,7 @@ export function Contact() {
         <h2 className="text-[62px] md:text-[94px] lg:text-[125px] font-light text-gray-900 tracking-tighter leading-[1.05] mb-8">
           Initiate
           <br />
-          <span className="hover:text-[#00A99D] hover:opacity-100 transition-all duration-500 hover-shake cursor-pointer font-semibold opacity-50">
+          <span className="hover:text-[#00A99D] hover:opacity-100 transition-all duration-500 hover-shake cursor-pointer font-semibold opacity-60">
             Connection.
           </span>
         </h2>

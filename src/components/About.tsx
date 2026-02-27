@@ -14,14 +14,14 @@ export function About() {
               Who We Are
             </span>
           </div>
-          <h2 className="group text-[47px] md:text-[78px] lg:text-[94px] leading-tight cursor-default font-light text-gray-900 tracking-tighter font-space-mono w-fit mb-8">
+          <h2 className="text-[32px] md:text-[40px] lg:text-[58px] leading-tight cursor-default font-light text-gray-900 tracking-tighter font-space-mono w-fit mb-8">
             About
             <br />
           </h2>
           <div className="flex transition-all duration-1000 ease-in-out mt-4 items-center">
             <img
               src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/736b594f-61e0-4347-9dd2-43ca7ab6296a_320w.png"
-              className="transition-all duration-700 cursor-none md:h-16 w-auto h-12 hover:opacity-70"
+              className="transition-all duration-700 cursor-none md:h-15 w-auto h-12 hover:opacity-70"
               alt="DECA4 Brand Logo"
             />
           </div>

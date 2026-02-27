@@ -44,9 +44,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-[#050505] text-gray-300 antialiased">
+    <html lang="en" className="bg-[#FAFAFA] text-gray-700 antialiased">
       <body
-        className={`${inter.variable} ${spaceMono.variable} antialiased overflow-x-hidden min-h-screen text-gray-300 bg-[#050505] w-full relative`}
+        className={`${inter.variable} ${spaceMono.variable} antialiased overflow-x-hidden min-h-screen text-gray-700 bg-[#FAFAFA] w-full relative`}
       >
         <Script
           src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js"

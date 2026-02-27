@@ -96,11 +96,11 @@ export function CoreOfferings() {
         </span>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-white/10 w-full border-white/10 border">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-gray-200 w-full border-black/10 border">
         {offerings.map((offering, index) => (
           <div
             key={index}
-            className="group bg-[#050505] p-10 md:p-12 lg:p-14 hover:bg-white/[0.02] transition-colors"
+            className="group bg-white p-10 md:p-12 lg:p-14 hover:bg-gray-50 transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -120,10 +120,10 @@ export function CoreOfferings() {
             >
               {offering.iconSvg}
             </svg>
-            <h3 className="text-lg font-mono uppercase tracking-widest text-white mb-3">
+            <h3 className="text-lg font-mono uppercase tracking-widest text-gray-900 mb-3">
               {offering.title}
             </h3>
-            <p className="text-base text-white/40 font-light leading-relaxed">
+            <p className="text-base text-gray-500 font-light leading-relaxed">
               {offering.description}
             </p>
           </div>

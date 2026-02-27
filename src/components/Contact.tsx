@@ -11,9 +11,9 @@ export function Contact() {
           width={42}
           height={42}
           strokeWidth={1}
-          className="text-white/30 mb-10"
+          className="text-gray-400 mb-10"
         />
-        <h2 className="text-[62px] md:text-[94px] lg:text-[125px] font-light text-white tracking-tighter leading-[1.05] mb-8">
+        <h2 className="text-[62px] md:text-[94px] lg:text-[125px] font-light text-gray-900 tracking-tighter leading-[1.05] mb-8">
           Initiate
           <br />
           <span className="hover:text-[#00A99D] hover:opacity-100 transition-all duration-500 hover-shake cursor-pointer font-semibold opacity-50">
@@ -36,7 +36,7 @@ export function Contact() {
               className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
             />
           </a>
-          <div className="uppercase leading-loose text-base text-white/30 tracking-widest font-mono">
+          <div className="uppercase leading-loose text-base text-gray-700 tracking-widest font-mono">
             From Strategy
             To Production
           </div>

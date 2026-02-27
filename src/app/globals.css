@@ -41,7 +41,7 @@ body {
 /* Custom Selection */
 ::selection {
   background-color: rgba(0, 169, 157, 0.3);
-  color: #fff;
+  color: #111827;
 }
 
 /* Smooth Shake Animation */

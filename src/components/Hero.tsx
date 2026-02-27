@@ -18,29 +18,19 @@ export function Hero() {
       </div>
 
       {/* Main Heading */}
-      <h1 className="text-[70px] md:text-[108px] lg:text-[140px] font-light text-white tracking-tighter leading-[1.02] mb-8">
-        <span
-          className="text-white"
-          style={{
-            textShadow: '0 0 24px rgba(0,169,157,0.25), 0 0 60px rgba(0,169,157,0.2)',
-          }}
-        >
+      <h1 className="text-[70px] md:text-[108px] lg:text-[140px] font-light text-gray-900 tracking-tighter leading-[1.02] mb-8">
+        <span className="text-gray-900">
           From Strategy
         </span>
         <br />
-        <span
-          className="hover:opacity-100 hover:text-[#00A99D] transition-all duration-500 cursor-pointer hover-shake font-semibold"
-          style={{
-            textShadow: '0 0 28px rgba(0,169,157,0.35), 0 0 80px rgba(0,169,157,0.25)',
-          }}
-        >
+        <span className="hover:opacity-100 hover:text-[#00A99D] transition-all duration-500 cursor-pointer hover-shake font-semibold">
           To Production
         </span>
       </h1>
 
       {/* Description */}
-      <div className="max-w-2xl border-white/10 border-l mb-10 pt-2 pb-2 pl-8">
-        <p className="text-white/50 text-lg md:text-xl leading-relaxed font-light">
+      <div className="max-w-2xl border-black/10 border-l mb-10 pt-2 pb-2 pl-8">
+        <p className="text-gray-500 text-lg md:text-xl leading-relaxed font-light">
           Bringing together the leading Blockchain & AI experts in the market to design
           and deliver cutting edge solutions.
         </p>
@@ -50,7 +40,7 @@ export function Hero() {
       <div className="flex flex-col sm:flex-row gap-5 w-fit">
         <button
           onClick={handleCalendlyClick}
-          className="group flex gap-4 hover:bg-white hover:text-black transition-all duration-300 uppercase cursor-pointer text-sm text-white tracking-widest font-mono bg-white/5 border-white/20 border pt-5 pr-10 pb-5 pl-10 backdrop-blur-sm gap-x-4 gap-y-4 items-center justify-center"
+          className="group flex gap-4 hover:bg-[#00A99D] hover:text-white transition-all duration-300 uppercase cursor-pointer text-sm text-gray-700 tracking-widest font-mono bg-transparent border-black/10 border pt-5 pr-10 pb-5 pl-10 backdrop-blur-sm gap-x-4 gap-y-4 items-center justify-center"
         >
           <span>Talk to us</span>
           <Icon
@@ -61,7 +51,7 @@ export function Hero() {
             className="group-hover:translate-x-1 transition-transform"
           />
         </button>
-        <button className="group flex items-center justify-center gap-4 px-10 py-5 border border-transparent hover:border-white/20 transition-all duration-300 font-mono text-sm uppercase tracking-widest text-white/60 hover:text-white">
+        <button className="group flex items-center justify-center gap-4 px-10 py-5 border border-transparent hover:border-black/10 transition-all duration-300 font-mono text-sm uppercase tracking-widest text-gray-500 hover:text-gray-900">
           <span>Agents (soon)</span>
         </button>
       </div>

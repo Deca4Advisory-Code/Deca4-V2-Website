@@ -73,10 +73,10 @@ export function ClientsPartners() {
               Who We Work With
             </span>
           </div>
-          <h2 className="text-[32px] md:text-[40px] lg:text-[48px] leading-tight font-medium text-white tracking-tight font-space-mono mb-6">
+          <h2 className="text-[32px] md:text-[40px] lg:text-[48px] leading-tight font-medium text-gray-900 tracking-tight font-space-mono mb-6">
             Trusted by<br />Industry Leaders
           </h2>
-          <p className="text-lg text-white/50 font-light leading-relaxed mb-8">
+          <p className="text-lg text-gray-500 font-light leading-relaxed mb-8">
             We partner with the most ambitious organizations globally, delivering noticeable results and scaling ecosystems with an excellent team of experts.
           </p>
         </div>
@@ -96,7 +96,7 @@ export function ClientsPartners() {
               {clients.map((client, index) => (
                 <div
                   key={index}
-                  className="group relative p-8 sm:p-10 rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-[#050505] hover:border-[#00A99D]/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_-10px_rgba(0,169,157,0.3)] flex flex-col items-center justify-center"
+                  className="group relative p-8 sm:p-10 rounded-3xl bg-white border border-gray-200 hover:bg-gray-50 hover:border-[#00A99D]/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_-10px_rgba(0,169,157,0.3)] flex flex-col items-center justify-center"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#00A99D]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
                   <div className="relative z-10 h-24 w-full flex items-center justify-center mb-4">
@@ -107,7 +107,7 @@ export function ClientsPartners() {
                     />
                   </div>
                   <div className="h-16 flex flex-col items-center justify-start w-full text-center">
-                    <h3 className="text-white/60 group-hover:text-white font-semibold tracking-tight text-sm sm:text-base transition-colors duration-300 mb-1">
+                    <h3 className="text-gray-600 group-hover:text-gray-900 font-semibold tracking-tight text-sm sm:text-base transition-colors duration-300 mb-1">
                       {client.name}
                     </h3>
                     <p className="text-[#00A99D] font-mono text-[10px] sm:text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-75">
@@ -132,7 +132,7 @@ export function ClientsPartners() {
               {partners.map((partner, index) => (
                 <div
                   key={index}
-                  className="group relative p-8 sm:p-10 rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-[#050505] hover:border-[#5e0ecd]/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_-10px_rgba(94,14,205,0.3)] flex flex-col items-center justify-center"
+                  className="group relative p-8 sm:p-10 rounded-3xl bg-white border border-gray-200 hover:bg-gray-50 hover:border-[#5e0ecd]/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_-10px_rgba(94,14,205,0.3)] flex flex-col items-center justify-center"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#5e0ecd]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
                   <img
@@ -141,7 +141,7 @@ export function ClientsPartners() {
                     className="relative z-10 max-h-16 max-w-full object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   />
                   <div className="h-12 flex flex-col items-center justify-start overflow-hidden w-full text-center relative z-10 mt-4">
-                    <h3 className="text-white/60 group-hover:text-white font-semibold tracking-tight text-sm sm:text-base transition-colors duration-300">
+                    <h3 className="text-gray-600 group-hover:text-gray-900 font-semibold tracking-tight text-sm sm:text-base transition-colors duration-300">
                       {partner.role}
                     </h3>
                   </div>

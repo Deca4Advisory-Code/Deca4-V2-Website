@@ -56,23 +56,23 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
 
   return (
     <div
-      className={`fixed flex flex-col transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-[100] bg-[#050505]/98 top-0 right-0 bottom-0 left-0 backdrop-blur-xl items-center justify-center ${
+      className={`fixed flex flex-col transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-[100] bg-white/98 top-0 right-0 bottom-0 left-0 backdrop-blur-xl items-center justify-center ${
         isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}
       id="fullscreen-menu"
     >
       {/* Corner Decorations */}
       <div className="pointer-events-none w-full h-full absolute top-0 right-0 bottom-0 left-0">
-        <div className="absolute top-8 left-8 w-8 h-8 md:w-12 md:h-12 border-t border-l border-white/10" />
-        <div className="absolute top-8 right-8 w-8 h-8 md:w-12 md:h-12 border-t border-r border-white/10" />
-        <div className="absolute bottom-8 left-8 w-8 h-8 md:w-12 md:h-12 border-b border-l border-white/10" />
-        <div className="absolute bottom-8 right-8 w-8 h-8 md:w-12 md:h-12 border-b border-r border-white/10" />
+        <div className="absolute top-8 left-8 w-8 h-8 md:w-12 md:h-12 border-t border-l border-black/10" />
+        <div className="absolute top-8 right-8 w-8 h-8 md:w-12 md:h-12 border-t border-r border-black/10" />
+        <div className="absolute bottom-8 left-8 w-8 h-8 md:w-12 md:h-12 border-b border-l border-black/10" />
+        <div className="absolute bottom-8 right-8 w-8 h-8 md:w-12 md:h-12 border-b border-r border-black/10" />
       </div>
 
       {/* Close Button */}
       <button
         onClick={handleClose}
-        className="absolute top-6 right-6 md:top-12 md:right-12 flex items-center mr-4 mt-4 gap-3 hover:text-white transition-colors font-mono text-xs uppercase tracking-widest text-white/70 pointer-events-auto mt-2 md:mt-0"
+        className="absolute top-6 right-6 md:top-12 md:right-12 flex items-center mr-4 mt-4 gap-3 hover:text-gray-900 transition-colors font-mono text-xs uppercase tracking-widest text-gray-600 pointer-events-auto mt-2 md:mt-0"
       >
         <span>Close</span>
         <Icon icon="solar:close-circle-linear" width={20} height={20} strokeWidth={1.5} />
@@ -94,13 +94,13 @@ export function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               onClick={handleClose}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group text-[42px] md:text-[62px] lg:text-[78px] transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] menu-item flex items-center gap-6 hover:translate-x-4 font-light text-white tracking-tighter font-space-mono w-full ${item.hoverClass} ${
+              className={`group text-[42px] md:text-[62px] lg:text-[78px] transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] menu-item flex items-center gap-6 hover:translate-x-4 font-light text-gray-900 tracking-tighter font-space-mono w-full ${item.hoverClass} ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${150 + (index + 1) * 100}ms` }}
             >
               <span
-                className={`font-mono text-lg md:text-xl text-white/30 transition-colors duration-500 w-12 ${item.numberHoverClass}`}
+                className={`font-mono text-lg md:text-xl text-gray-400 transition-colors duration-500 w-12 ${item.numberHoverClass}`}
               >
                 {item.number}
               </span>

@@ -14,41 +14,41 @@ export function About() {
               Who We Are
             </span>
           </div>
-          <h2 className="group text-[47px] md:text-[78px] lg:text-[94px] leading-tight cursor-default font-light text-white tracking-tighter font-space-mono w-fit mb-8">
+          <h2 className="group text-[47px] md:text-[78px] lg:text-[94px] leading-tight cursor-default font-light text-gray-900 tracking-tighter font-space-mono w-fit mb-8">
             About
             <br />
           </h2>
           <div className="flex transition-all duration-1000 ease-in-out mt-4 items-center">
             <img
               src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/736b594f-61e0-4347-9dd2-43ca7ab6296a_320w.png"
-              className="transition-all duration-700 cursor-none md:h-16 w-auto h-12 invert brightness-0 hover:invert-0 hover:brightness-100"
+              className="transition-all duration-700 cursor-none md:h-16 w-auto h-12 hover:opacity-70"
               alt="DECA4 Brand Logo"
             />
           </div>
         </div>
 
         {/* Right Column */}
-        <div className="lg:col-span-7 border-white/10 border-l pl-10">
-          <p className="text-[21px] md:text-[23px] leading-relaxed font-light text-white/60 mb-10">
+        <div className="lg:col-span-7 border-black/10 border-l pl-10">
+          <p className="text-[21px] md:text-[23px] leading-relaxed font-light text-gray-600 mb-10">
             DECA4 brings together
-            <span className="text-white">
+            <span className="text-gray-900">
               {' thought leaders '}
             </span>
             and
-            <span className="text-white">
+            <span className="text-gray-900">
               {' innovators '}
             </span>
             to identify how clients can leverage Blockchain & AI in their business.
           </p>
-          <p className="text-[21px] md:text-[23px] leading-relaxed font-light text-white/60 mb-10">
+          <p className="text-[21px] md:text-[23px] leading-relaxed font-light text-gray-600 mb-10">
             With
-            <span className="text-white">
+            <span className="text-gray-900">
               {' experts '}
             </span>
             from software development and consulting, legal, marketing,
             educational, business development organizations, we are ideally
             positioned to assist you in building a
-            <span className="text-white">
+            <span className="text-gray-900">
               {' Blockchain & AI solution '}
             </span>
             which suits your needs.

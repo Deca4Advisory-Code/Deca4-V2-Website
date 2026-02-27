@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
  * Animated background using Unicorn Studio
  */
 
-export const UNICORN_PROJECT_ID = 'vTTCp5g4cVl9nwjlT56Z';
+export const UNICORN_PROJECT_ID = 'fwiWmy5SCBHrWSr6ZHaH';
 
 /**
  * Unicorn Studio background component
